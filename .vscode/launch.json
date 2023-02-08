@@ -21,6 +21,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\deploy-commands-guild.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Deploy globally",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\deploy-commands-global.js"
         }
     ]
 }
