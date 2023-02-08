@@ -21,7 +21,8 @@
   "dependencies": {
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.3.0"
   },
   "devDependencies": {
     "eslint": "^8.33.0"

@@ -23,7 +23,7 @@ const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
 			{ body: commands },
 		);
 
-		console.log(`Reloading ${data.length} application (/) commands for guild ${process.env.GUILD_ID}`);
+		console.log(`Reloaded ${data.length} application (/) commands for guild ${process.env.GUILD_ID}`);
 	} catch (error) {
 		console.error(error);
 	}
