@@ -22,7 +22,7 @@ export const data = new SlashCommandBuilder()
 			.setName('link')
 			.setDescription('Link to embed JSON')
 			.setRequired(true)))
-	.setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
+	.setDefaultMemberPermissions(PermissionFlagsBits.ManageGuild)
 
 export async function execute(interaction) {
 	const content = await (await fetch(interaction.options.getString('link'))
