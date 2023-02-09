@@ -37,12 +37,14 @@ export async function execute(interaction) {
 		case 'create': {
 			interaction.channel.send(content)
 				.catch(console.error);
+			break;
 		}
 		case 'edit': {
 			const message = await interaction.channel.messages.fetch(interaction.options.getString('id'))
 				.catch(console.error);
 			message.edit(content)
 				.catch(console.error);
+			break;
 		}
 	}
 
